@@ -22,7 +22,6 @@ spec:
       selfHeal: true
     syncOptions:
     - CreateNamespace=true
-
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
@@ -85,7 +84,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL:  https://github.com/AymenHichri/IdP-with-Argo-Crossplane
+        repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
         targetRevision: HEAD
         path: '{{.path.path}}'
         directory:
