@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane.git
+    repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
     targetRevision: HEAD
     path: crossplane/deployment
   destination:
@@ -35,7 +35,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
   - git:
-      repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane.gitp
+      repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
       revision: HEAD
       directories:
         - path: crossplane/providers/*
@@ -46,7 +46,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane.git
+        repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
         targetRevision: HEAD
         path: '{{.path.path}}'
         directory:
