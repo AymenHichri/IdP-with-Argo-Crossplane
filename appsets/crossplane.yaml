@@ -42,13 +42,13 @@ spec:
       requeueAfterSeconds: 30
   template:
     metadata:
-      name: '{{.path.basename}}'
+      name: '{{path.basename}}'
     spec:
       project: default
       source:
         repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
         targetRevision: HEAD
-        path: '{{.path.path}}'
+        path: '{{path.path}}'
         directory:
           recurse: true
       destination:
@@ -80,13 +80,13 @@ spec:
       requeueAfterSeconds: 30
   template:
     metadata:
-      name: '{{.path.basename}}'
+      name: '{{path.basename}}'
     spec:
       project: default
       source:
         repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
         targetRevision: HEAD
-        path: '{{.path.path}}'
+        path: '{{path.path}}'
         directory:
           recurse: true
       destination:
