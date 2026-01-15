@@ -1,4 +1,4 @@
-apiVersion: idp.vcluste/v1alpha1
+apiVersion: idp.vcluster/v1alpha1
 kind: VirtualCluster
 metadata:
   name: new-dev-team
