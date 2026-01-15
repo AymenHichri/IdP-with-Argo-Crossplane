@@ -3,11 +3,11 @@ kind: Composition
 metadata:
   name: virtualcluster
   labels:
-    crossplane.io/xrd: xvirtualclusters.idp.lieberlois
+    crossplane.io/xrd: xvirtualclusters.idp.vcluster
     provider: helm
 spec:
   compositeTypeRef:
-    apiVersion: idp.lieberlois/v1alpha1
+    apiVersion: idp.vcluster/v1alpha1
     kind: XVirtualCluster
   resources:
   - name: vcluster

@@ -1,9 +1,9 @@
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:
-  name: xvirtualclusters.idp.lieberlois
+  name: xvirtualclusters.idp.vcluster
 spec:
-  group: idp.lieberlois
+  group: idp.vcluster
   names:
     kind: XVirtualCluster
     plural: xvirtualclusters
