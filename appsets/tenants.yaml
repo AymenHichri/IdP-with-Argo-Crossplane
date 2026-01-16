@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane.git
-    targetRevision: main
+    targetRevision: HEAD
     path: tenants
   destination:
     server: https://kubernetes.default.svc

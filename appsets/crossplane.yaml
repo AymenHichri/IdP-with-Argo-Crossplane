@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
-    targetRevision: main
+    targetRevision: HEAD
     path: crossplane/deployment
   destination:
     server: https://kubernetes.default.svc
@@ -36,7 +36,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
-      revision: main
+      revision: HEAD
       directories:
         - path: crossplane/providers/*
       requeueAfterSeconds: 30
@@ -47,7 +47,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
-        targetRevision: main
+        targetRevision: HEAD
         path: '{{.path.path}}'
         directory:
           recurse: true
@@ -74,7 +74,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
-      revision: main
+      revision: HEAD
       directories:
         - path: crossplane/xrds/*
       requeueAfterSeconds: 30
@@ -85,7 +85,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/AymenHichri/IdP-with-Argo-Crossplane
-        targetRevision: main
+        targetRevision: HEAD
         path: '{{.path.path}}'
         directory:
           recurse: true
